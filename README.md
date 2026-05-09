@@ -2,6 +2,8 @@
 
 A convolutional neural network pipeline for automatic colorization of grayscale images. The model is trained on face images and then fine-tuned on a fruits & vegetables dataset using transfer learning. Built with PyTorch and OpenCV.
 
+For a detailed write-up of the methodology and results, see [Formal-Writeup.pdf](Formal-Writeup.pdf).
+
 ## Overview
 
 Colorization is framed as a regression problem in the LAB color space. The network takes a grayscale **L\* channel** as input and predicts the **a\* and b\* chrominance channels**, which are then combined with L\* to reconstruct a full-color image.
