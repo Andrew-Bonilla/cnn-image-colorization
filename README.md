@@ -90,10 +90,10 @@ Inference on 100 face images:
 
 > **Datasets:** Not included in this repo. Place your data in the following directories before running:
 > - `face_images/` — 128×128 face images used for initial training ([Georgia Tech Face Database](https://www.anefian.com/research/face_reco.htm))
-> - `NCDataset/` — NCD grayscale images (transfer learning input) ([Natural Color Dataset](https://arxiv.org/pdf/2008.10774))
-> - `NCColorful/` — NCD color images (transfer learning targets) ([Natural Color Dataset](https://arxiv.org/pdf/2008.10774))
+> - `NCDataset/` — NCD grayscale images (transfer learning input) ([Natural Color Dataset](https://github.com/saeed-anwar/ColorSurvey), [paper](https://arxiv.org/pdf/2008.10774))
+> - `NCColorful/` — NCD color images (transfer learning targets) ([Natural Color Dataset](https://github.com/saeed-anwar/ColorSurvey), [paper](https://arxiv.org/pdf/2008.10774))
 >
-> **Model weights:** `*.pth` files are not included. Run the scripts in order below to generate them.
+> **Model weights:** `colorizer.pth` is included. You can also regenerate it by running the scripts in order below.
 
 ## Requirements
 
@@ -105,7 +105,7 @@ A CUDA-capable GPU is recommended. The scripts default to `device = cuda`.
 
 ## How to Run
 
-Run the scripts in the following order:
+Run the scripts in the following order. **If you want to use the provided `colorizer.pth` weights, you can skip steps 1 and 2 and start from step 3.**
 
 ### 1. Train the Regressor (baseline)
 

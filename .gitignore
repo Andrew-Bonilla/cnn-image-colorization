@@ -17,9 +17,6 @@ colorized_results/
 colorized_train_results/
 ncd_results/
 
-# Model weights (not available — see README)
-*.pth
-
 # Python cache
 __pycache__/
 *.pyc
